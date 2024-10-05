@@ -149,8 +149,8 @@ def send_mail():
 
     connect=smtplib.SMTP(host="smtp.gmail.com",port=587)
     connect.starttls()
-    connect.login(user="harsacdevelopers@gmail.com",password="bhtunhqpmhegrppl")
-    connect.sendmail(from_addr="harsacdevelopers@gmail.com",to_addrs=to,msg=message)
+    connect.login(user="--",password="--")
+    connect.sendmail(from_addr="--",to_addrs=to,msg=message)
     connect.close()
     messagebox.showinfo(title="Mail",message=f"Mail Sent To {to}")
 
